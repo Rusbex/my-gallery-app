@@ -32,7 +32,7 @@ return [
     ],
 
     'unsplash' => [
-        'key' => env('we83XoIc_VMrMUKI2zSQ1shjxnenslVaMn46SEKWUKE'),
+        'key' => env('UNSPLASH_ACCESS_KEY'),
     ],
 
 ];

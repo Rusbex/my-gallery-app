@@ -12,9 +12,11 @@ class GalleryController extends Controller
         $response = Http::get('https://api.unsplash.com/photos', [
             'client_id' => config('services.unsplash.key'),
             'per_page' => 10,
+
         ]);
 
         $photos = $response->json();
+//        dd($photos); // добавлено для отладки
 
         return view('home', [
             'photos' => $photos,

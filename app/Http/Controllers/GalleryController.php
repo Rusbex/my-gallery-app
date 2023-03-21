@@ -11,7 +11,7 @@ class GalleryController extends Controller
     {
         $response = Http::get('https://api.unsplash.com/photos', [
             'client_id' => config('services.unsplash.key'),
-            'per_page' => 10,
+            'per_page' => 15,
 
         ]);
 

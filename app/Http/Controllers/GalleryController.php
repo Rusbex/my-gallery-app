@@ -22,4 +22,8 @@ class GalleryController extends Controller
             'photos' => $photos,
         ]);
     }
+    public function about()
+    {
+        return view('about');
+    }
 }

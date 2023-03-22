@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\GalleryController::class,'index'])->name('home');
+Route::get('/about', [\App\Http\Controllers\GalleryController::class,'about'])->name('about');
